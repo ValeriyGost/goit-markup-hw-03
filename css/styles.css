@@ -136,6 +136,8 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: none;
+  min-width: 169px;
   border-radius: 4px;
   width: 169px;
   height: 56px;
@@ -170,6 +172,7 @@ p {
 }
 
 .advantages {
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -193,8 +196,7 @@ p {
   width: calc((100% - 72px) / 4);
 }
 .advantages-title-card-content {
-  padding-top: 120px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages-paragraph {
   /* padding-bottom: 120px; */
