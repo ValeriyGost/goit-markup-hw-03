@@ -2,23 +2,53 @@
 font-family: 'Raleway', serif; */
 /* #region header */
 body {
-  font-family:'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img {
+  display: block;
 }
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
+.section {
+  padding-bottom: 120px;
+}
 .page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .nav-header {
+  display: flex;
+  align-items: center;
 }
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -30,11 +60,20 @@ a {
 .logo-header .logo-part {
   color: #2e2f42;
 }
+.logo-header {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .nav-item {
 }
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -43,12 +82,18 @@ a {
 }
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .contacts-item {
 }
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -65,6 +110,7 @@ a {
 /* #region hero*/
 .hero {
   background-color: #2e2f42;
+  height: 600px;
 }
 .hero-title {
   font-weight: 700;
@@ -72,17 +118,28 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
+  max-width: 496px;
   text-align: center;
+
+  padding-top: 188px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 .hero-button {
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -95,7 +152,7 @@ h2 {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-    color: #2e2f42;
+  color: #2e2f42;
 }
 
 h3 {
@@ -115,14 +172,33 @@ p {
 
 .advantages {
 }
-.advantages-title {
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantages-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
 }
 .advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+.advantages-title-card-content {
+  padding-top: 120px;
+  padding-bottom: 8px;
 }
 .advantages-paragraph {
+  /* padding-bottom: 120px; */
 }
 /* #endregion Advantages */
 
@@ -132,22 +208,35 @@ p {
   background-color: #f4f4fd;
 }
 .team-title {
+  padding-top: 120px;
+  padding-bottom: 72px;
   text-align: center;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 .team-list {
-  background-color: #ffffff;
+  display: flex;
+  gap: 24px;
 }
 .team-item {
   background-color: #ffffff;
+
+  width: calc((100% - 72px) / 4);
 }
 .team-imeg {
+  width: 264px;
+  height: 260px;
 }
 .team-title-name {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-transform: capitalize;
 }
-.advantages-title-card-content {
-}
+
 .team-paragraph {
+  padding-bottom: 32px;
+  text-align: center;
+  text-transform: capitalize;
 }
 /* #endregion Our Team */
 /* #region Our Portfolio */
@@ -156,22 +245,45 @@ p {
 .portfolio-title {
   text-align: center;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .portfolio-list {
-  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-item {
+  background-color: #ffffff;
+  width: calc((100% - 24 * 2) / 3);
 }
 .portfolio-img {
+  margin: 0;
 }
 .portfolio-title-card-content {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 18px;
 }
 .portfolio-paragrapf {
+  padding-bottom: 32px;
+  padding-left: 18px;
+}
+.portfolio-title-card-content {
+  border: 2px solid #e7e9fc;
+  border-top: none;
+  border-bottom: none;
+}
+.portfolio-paragrapf {
+  border: 2px solid #e7e9fc;
+  border-top: none;
 }
 /* #endregion Our Portfolio */
 /* #region footer */
 .footer {
   background-color: #2e2f42;
+  height: 312px;
+  padding-top: 100px;
 }
 .logo {
 }
@@ -180,8 +292,15 @@ p {
 }
 .footer-paragrapf {
   color: #f4f4fd;
+  max-width: 264px;
+  padding-top: 16px;
+  padding-bottom: 100px;
 }
 
 .logo-footer .logo-part {
   color: #f4f4fd;
+}
+.logo-footer {
+}
+
 /* #endregion footer */
