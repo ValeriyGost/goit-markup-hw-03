@@ -264,6 +264,8 @@ p {
 .title-paragrapf {
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 .portfolio-title-card-content {
@@ -271,10 +273,10 @@ p {
   padding: 32px 16px;
 }
 .portfolio-paragrapf {
+  padding: 32px 16px;
+  padding-top: 0;
 }
 
-.portfolio-paragrapf {
-}
 /* #endregion Our Portfolio */
 /* #region footer */
 .footer {
