@@ -264,17 +264,13 @@ p {
 .title-paragrapf {
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 .portfolio-title-card-content {
   margin-bottom: 8px;
-  padding: 32px 16px;
 }
 .portfolio-paragrapf {
-  padding: 32px 16px;
-  padding-top: 0;
 }
 
 /* #endregion Our Portfolio */
